@@ -2,6 +2,6 @@
 
 import pandas as pd
 
-df = pd.read_csv("./testFile/popular-name.txt")
+df = pd.read_csv("./testFile/popular-name.txt", sep="\t", header=None)
 
-print(len(df.drop_duplicates(subset='name')))
+print(len(df.drop_duplicates(0)))
